@@ -15,8 +15,7 @@ else
 endif
 badd +1 integrals_deritaves.tex
 badd +1 preamble.tex
-badd +8 ~/Lib/NAU/Algorithms_and_data_structures/Labs/Lab1/LaTeX/preamble/preamble.tex
-badd +0 macros.tex
+badd +1 macros.tex
 argglobal
 %argdel
 tabnew +setlocal\ bufhidden=wipe
@@ -46,12 +45,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 8 - ((7 * winheight(0) + 28) / 57)
+let s:l = 35 - ((34 * winheight(0) + 28) / 57)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 8
-normal! 013|
+keepjumps 35
+normal! 0157|
 tabnext
 edit macros.tex
 argglobal
@@ -104,6 +103,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+set hlsearch
 let g:this_session = v:this_session
 let g:this_obsession = v:this_session
 doautoall SessionLoadPost

@@ -13,12 +13,25 @@
 \cheattitle{Таблиця похідних}
 \begin{align*}
 	& C'=0 & & (u^n)'=nu^{n-1}u' & & \left(\sqrt{u}\right)=\frac{1}{2\sqrt{u}}u' & & \left(\frac{1}{u}\right)'=-\frac{1}{u^2}u' & & \left(a^u\right)'=a^u\ln a\cdot u' \\
-	& (e^u)'=e^uu' & & \left(\log_au\right)'=\frac{1}{u\ln a} u' & & \left(\ln u\right)'=\frac{1}{u}u' & & \left(\sin u\right)'=\cos u\cdot u' & & \left(\cos u\right)'=-\sin u\cdot u'\\
-	& \left(\tg u\right)' = \frac{1}{\cos^2u}u' & &\left(\ctg u\right)' = \frac{1}{\sin^2u}u' & & \left(\arcsin u\right)' = \frac{1}{\sqrt{1-u^2}}u' & & \left(\arccos u\right)'= -\frac{1}{\sqrt{1-u^2}} & & \left(\arcctg u\right)' = \frac{1}{1+u^2}u'\\
+	& \left(\arccos u\right)'= -\frac{1}{\sqrt{1-u^2}} & & \left(\log_au\right)'=\frac{1}{u\ln a} u' & & \left(\ln u\right)'=\frac{1}{u}u' & & \left(\sin u\right)'=\cos u\cdot u' & & \left(\cos u\right)'=-\sin u\cdot u'\\
+	& \left(\tg u\right)' = \frac{1}{\cos^2u}u' & &\left(\ctg u\right)' = \frac{1}{\sin^2u}u' & & \left(\arcsin u\right)' = \frac{1}{\sqrt{1-u^2}}u' & & (e^u)'=e^uu' & & \left(\arcctg u\right)' = \frac{1}{1+u^2}u'\\
 	& \left(\arcctg u\right)'=-\frac{1}{1+u^2}u' & & \left(\sh u\right)' = \ch u \cdot u' & & \left(\ch u\right)' = \sh u\cdot u' & & \left(\th u\right)' = \frac{1}{\ch^2u}u' & & \left(\cth u\right)' = -\frac{1}{\sh^2u}u'
 \end{align*}
 \cheattitle{Формула Тейлора}
 \begin{align*}
 	f(x) = f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\dots+\frac{f^{n}(0)}{n!}x^n+\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}
+\end{align*}
+
+
+
+\newpage
+\cheattitle{Таблиця основних інтегралів}
+\begin{align*}
+	& \int \frac{du}{u^2 - a^2}=\frac{1}{2a}\ln\left|\frac{u-a}{u+a}\right|+C & & \int du = u + C & & \int	\frac{du}{\cos^2 u} = \tg u+C & & \int \frac{du}{u}=\ln|u|+C\\
+	& \int \ctg udu = \ln \left|\sin u\right| + C & & \int e^udu = e^u+C & & \int \sin udu= -\cos u + C & & \int \cos udu = \sin u +C\\
+	& \int u^ndu = \frac{u^{n+1}}{n+1}+C,\ n\neq -1 & & \int \frac{du}{\sin^2u}=-\ctg u +C & & \int	\frac{du}{u^2+a^2}=\frac{1}{a}\arctg\frac{u}{a}+C & & \int 0du=C\\
+	& \int	\frac{du}{\sqrt{u^2\pm a^2}}=\ln\left|U+\sqrt{u^2\pm a^2}\right| +C & & \int \sh udu=\ch u+C & & \int	\frac{du}{\sqrt{a^2-u^2}}=\arcsin\frac{u}{a}+C & & \int \ch udu = \sh u + C\\
+	& \int \frac{du}{\ch^2u}=\th u + C & & \int \frac{du}{\sh^2u}=-\cth u +C & & \int \tg udu = -\ln\left|\cos u \right| + C & &\int a^ndu = \frac{a^u}{\ln a}+C\\
+	&  & & \int	\frac{du}{\sin u}=\ln \left|\tg \frac{u}{2}\right| + C & & \int \frac{du}{\cos u} = \ln \left|\tg\left(\frac{u}{2}+\frac{\pi}{4}\right)\right| + C & &
 \end{align*}
 \end{document}

@@ -1,0 +1,24 @@
+% !TeX root = ./integrals_deritaves.tex
+\input{preamble}
+\input{macros}
+
+\begin{document}
+\small
+
+\cheattitle{Основні правила диференціювання}
+\begin{align*}
+	&(u+v)'=u'+v' & & (u-v)'=u'-v' & & (uv)'=u'v+uv' &  & (Cu)'=Cu'\\
+	& (uvw)'=u'vw+uv'w+uvw' & & \left(\frac{u}{v}\right)' =\frac{u'v-uv'}{v^2},\ v\neq 0 & & \left(\frac{C}{v}\right)'=-C\frac{v'}{v^2},\ v\neq 0 & & \left(\frac{u}{C}\right)'=\frac{1}{C}u'\\
+\end{align*}
+\cheattitle{Таблиця похідних}
+\begin{align*}
+	& C'=0 & & (u^n)'=nu^{n-1}u' & & \left(\sqrt{u}\right)=\frac{1}{2\sqrt{u}}u' & & \left(\frac{1}{u}\right)'=-\frac{1}{u^2}u' & & \left(a^u\right)'=a^u\ln a\cdot u' \\
+	& (e^u)'=e^uu' & & \left(\log_au\right)'=\frac{1}{u\ln a} u' & & \left(\ln u\right)'=\frac{1}{u}u' & & \left(\sin u\right)'=\cos u\cdot u' & & \left(\cos u\right)'=-\sin u\cdot u'\\
+	& \left(\tg u\right)' = \frac{1}{\cos^2u}u' & &\left(\ctg u\right)' = \frac{1}{\sin^2u}u' & & \left(\arcsin u\right)' = \frac{1}{\sqrt{1-u^2}}u' & & \left(\arccos u\right)'= -\frac{1}{\sqrt{1-u^2}} & & \left(\arcctg u\right)' = \frac{1}{1+u^2}u'\\
+	& \left(\arcctg u\right)'=-\frac{1}{1+u^2}u' & & \left(\sh u\right)' = \ch u \cdot u' & & \left(\ch u\right)' = \sh u\cdot u' & & \left(\th u\right)' = \frac{1}{\ch^2u}u' & & \left(\cth u\right)' = -\frac{1}{\sh^2u}u'
+\end{align*}
+\cheattitle{Формула Тейлора}
+\begin{align*}
+	f(x) = f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\dots+\frac{f^{n}(0)}{n!}x^n+\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}
+\end{align*}
+\end{document}

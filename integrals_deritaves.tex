@@ -12,14 +12,15 @@
 
 \cheattitle{Основні правила диференціювання}
 \begin{align*}
-	&(u+v)'=u'+v' & & (u-v)'=u'-v' & & (uv)'=u'v+uv' &  & (Cu)'=Cu'\\
-	& (uvw)'=u'vw+uv'w+uvw' & & \left(\frac{u}{v}\right)' =\frac{u'v-uv'}{v^2},\ v\neq 0 & & \left(\frac{C}{v}\right)'=-C\frac{v'}{v^2},\ v\neq 0 & & \left(\frac{u}{C}\right)'=\frac{1}{C}u'
+	& (u+v)'=u'+v' & & (u-v)'=u'-v' & & (uv)'=u'v+uv' &  & (Cu)'=Cu'\\
+	& (uvw)'=u'vw+uv'w+uvw' & & \left(\frac{u}{v}\right)' =\frac{u'v-uv'}{v^2},\ v\neq 0 & & \left(\frac{C}{v}\right)'=-C\frac{v'}{v^2},\ v\neq 0 & & \left(\frac{u}{C}\right)'=\frac{1}{C}u'\\
+	& f(g(x))' = f'(g(x))\cdot g(x)' & & y_x'=\frac{y_t'}{x_t'} & & y'=u^v\ln u\cdot v'+vu^{v-1}u' & & dy = f'(x)dx
 \end{align*}
 \cheattitle{Основні похідні}
 \begin{align*}
 	& C'=0 & & (u^n)'=nu^{n-1}u' & & \left(\sqrt{u}\right)'=\frac{1}{2\sqrt{u}}u' & & \left(\frac{1}{u}\right)'=-\frac{1}{u^2}u' & & \left(a^u\right)'=a^u\ln a\cdot u' \\
 	& \left(\arccos u\right)'= -\frac{1}{\sqrt{1-u^2}} & & \left(\log_au\right)'=\frac{1}{u\ln a} u' & & \left(\ln u\right)'=\frac{1}{u}u' & & \left(\sin u\right)'=\cos u\cdot u' & & \left(\cos u\right)'=-\sin u\cdot u'\\
-	& \left(\tg u\right)' = \frac{1}{\cos^2u}u' & &\left(\ctg u\right)' = \frac{1}{\sin^2u}u' & & \left(\arcsin u\right)' = \frac{1}{\sqrt{1-u^2}}u' & & (e^u)'=e^uu' & & \left(\arcctg u\right)' = \frac{1}{1+u^2}u'\\
+	& \left(\tg u\right)' = \frac{1}{\cos^2u}u' & &\left(\ctg u\right)' = \frac{1}{\sin^2u}u' & & \left(\arcsin u\right)' = \frac{1}{\sqrt{1-u^2}}u' & & (e^u)'=e^uu' & & \left(\arctg u\right)' = \frac{1}{1+u^2}u'\\
 	& \left(\arcctg u\right)'=-\frac{1}{1+u^2}u' & & \left(\sh u\right)' = \ch u \cdot u' & & \left(\ch u\right)' = \sh u\cdot u' & & \left(\th u\right)' = \frac{1}{\ch^2u}u' & & \left(\cth u\right)' = -\frac{1}{\sh^2u}u'
 \end{align*}
 
@@ -30,43 +31,50 @@
 	& \int u^ndu = \frac{u^{n+1}}{n+1}+C,\ n\neq -1 & & \int \frac{du}{\sin^2u}=-\ctg u +C & & \int	\frac{du}{u^2+a^2}=\frac{1}{a}\arctg\frac{u}{a}+C & & \int 0du=C\\
 	& \int	\frac{du}{\sqrt{u^2\pm a^2}}=\ln\left|U+\sqrt{u^2\pm a^2}\right| +C & & \int \sh udu=\ch u+C & & \int	\frac{du}{\sqrt{a^2-u^2}}=\arcsin\frac{u}{a}+C & & \int \ch udu = \sh u + C\\
 	& \int \frac{du}{\cos u} = \ln \left|\tg\left(\frac{u}{2}+\frac{\pi}{4}\right)\right| + C & & \int \frac{du}{\sh^2u}=-\cth u +C & & \int \tg udu = -\ln\left|\cos u \right| + C & &\int a^ndu = \frac{a^u}{\ln a}+C\\
-	&  & & \int	\frac{du}{\sin u}=\ln \left|\tg \frac{u}{2}\right| + C & &  \int \frac{du}{\ch^2u}=\th u + C& &
+	& \int \frac{du}{\sin u}=\ln \left|\tg \frac{u}{2}\right| + C & &  \int \frac{du}{\ch^2u}=\th u + C & & \span\span \int\limits_a^bf(x)dx=F(x)\biggr|_a^b=F(b)-=F(a)\text{ -- ф. Н.--Л.}% 
 \end{align*}
-% \vspace{pt}
-\begin{gather*}
-	\int\limits_a^bf(x)dx=F(x)\biggr|_a^b=F(b)-=F(a)\text{ -- формула Ньютона--Лейбніца}
-\end{gather*}
 \newpage
 \cheattitle{Еквівалентні нескінченно малі функції}
 \begin{gather*}
-	x\sim\sin x\sim \tg x \sim \arcsin x\sim \arctg x\sim e^x-1 \sim \ln(1+x),\ 1-\cos x\sim \frac{1}{2}x^2,\ a^x-1\sim x\ln a,\ (a+x)^k -1\sim kx\\
-	\log_a(1+x)\sim x\log_ae,\text{ якщо } x\to 0
+	x\sim\sin x\sim \tg x \sim \arcsin x\sim \arctg x\sim e^x-1 \sim \ln(1+x),\ 1-\cos x\sim x^2/2,\ a^x-1\sim x\ln a,\ (a+x)^k -1\sim kx\\
+	\sqrt{1+x}-1\sim x/2,\ \ln\cos x\sim -x^2/2,\ \log_a(1+x)\sim x\log_ae,\text{ якщо } x\to 0
 \end{gather*}
 \cheattitle{Важливі границі}
 \begin{align*}
-	& \lim\limits_{x\to0} \frac{\sin x}{x} = 1 & & \lim\limits_{x\to\infty} \left(1+\frac{1}{x}\right)^x=e  & & \lim\limits_{t\to0}\left(1+t\right)^\frac{1}{t}=e & & \lim\limits_{x\to\infty} \left(1+\frac{k}{x}\right)^x=e^k & & \lim\limits_{x\to0}\frac{\log_a(1+x)}{x}=\log_ae\\
-	& \lim\limits_{x\to0}\frac{a^x-1}{x}=\ln a & & \lim\limits_{x\to0}\frac{(1+x)^k-1}{x}=1 & & \lim\limits_{x\to0}\frac{\ln(1+x)}{x}=1 & & \lim\limits_{x\to0}\frac{e^x-1}{x}=1 & & \lim\limits_{x\to0}\frac{\sin ax}{\sin bx} = \frac{a}{b}
+	& \lim\limits_{x\to0} \frac{\sin k x}{x} = k & & \lim\limits_{x\to\infty}\frac{\tg kx}{x}=k   & & \lim\limits_{x\to0}\frac{\arcsin kx}{x}=k & & \lim\limits_{x\to\infty} \left(1+\frac{k}{x}\right)^x=e^k & & \lim\limits_{x\to0}\frac{\log_a(1+x)}{x}=\log_ae\\
+	&\lim\limits_{x\to0}\frac{1-\cos x}{x^2}=\frac{1}{2}& & \lim\limits_{x\to0}\frac{(1+x)^k-1}{x}=k & &  \lim\limits_{x\to0}\frac{\arctg kx}{x}=k & & \lim\limits_{t\to0}\left(1+t\right)^\frac{1}{t}=e  & &  \lim\limits_{x\to0}\frac{a^x-1}{x}=\ln a 
 \end{align*}
 \cheattitle{Прогресії}
-\begin{gather*}
-	a_n =a_1+d(n-1),\ S_n = \frac{a_1+a_n}{2}\cdot n\text{ -- арифм. прогресія}\\
-	b_n=b_1\cdot q^{n-1},\ S_n=\frac{b_1(q^n-1)}{q-1},\ q\neq1\text{ -- геомтр. прогресія}
-\end{gather*}
+\begin{align*}
+	& a_n =a_1+d(n-1),\ S_n = \frac{a_1+a_n}{2}\cdot n\text{ -- арифм.} & & b_n=b_1\cdot q^{n-1},\ S_n=\frac{b_1(q^n-1)}{q-1},\ q\neq1\text{ -- геомтр.}
+\end{align*}
 \cheattitle{Комбінаторика}
 \begin{align*}
-	&P_n = 1\cdot 2\cdot3\cdot\dotso\cdot n=n! & & C_n^k=\frac{n!}{k!\cdot(n-k)!} & & A_n^k = \frac{n!}{(n-k)!}
+	& P_n = 1\cdot 2\cdot3\cdot\dotso\cdot n=n! & & C_n^k=\frac{n!}{k!\cdot(n-k)!} & & A_n^k = \frac{n!}{(n-k)!} & & \overline{C_n^k}=C^k_{n+k-1}=\frac{(n+k-1)!}{k!\cdot(n-k)!}& & \overline{A_n^k}=n^k 
 \end{align*}
-\cheattitle{Інші формули}
-\begin{gather*}
-	a^{\log_ab}=b,\ \log_a1=0,\ \log_a(a\cdot b) = \log_ab+\log_ac,\ \log \frac{b}{c}=\log_ab - \log_a c,\ \log_ab^n = n\cdot \log_ab,\ log_{a^k}b=\frac{1}{k}\cdot\log_ab\\
-	z^n=|z|^n(\cos n\varphi+i\sin n\varphi),\ \frac{z_2}{z_2} = \frac{\rho_1}{\rho_2}\left(\cos(\varphi_1-\varphi_2)+i\sin(\varphi_1-\varphi_2)\right),\ \sqrt[n]{z}=\sqrt[n]{|z|}\left(\cos\frac{\varphi+2\pi k}{n}+i\sin\frac{\varphi+2\pi k}{n}\right)\\
-	f(x) = f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\dots+\frac{f^{(n)}(0)}{n!}x^n+\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}\text{ -- формула Маклор\'{е}на}\\
-	\grad u(M) = \frac{\partial u(M)}{\partial x}\vv{i}+\frac{\partial u (M)}{\partial y}\vv{j} + \frac{\partial u (M)}{\partial z}\vv{k}\text{ -- означення градієнту}\\
-	a^3\pm b^3=(a\pm b)(a^2\mp ab+b^2),\ (a\pm b)^3=a^3 \pm  3a^2b + 3ab^2 \pm  b^3
-\end{gather*}
-\begin{align*}
-	& A_{\text{кола}}=\pi r^2 & & l_{\text{кола}}=2\pi r & & V_{\text{сфери}}=\frac{4}{3}\pi r^3 & & A_{\text{сфери}} = 4\pi r^2
-\end{align*}
-
+\begin{minipage}{.3\textwidth}
+	\cheattitle{Логарифми}
+	\begin{align*}
+	& a,b,c>0,\ a\neq 1,\ k\neq 0\\
+	& a^{\log_ab}=b,\ \log_aa=1\\
+	& \log_a(a\cdot b) = \log_ab+\log_ac\\ 
+	& \log \frac{b}{c}=\log_ab - \log_a c\\ 
+	& \log_ab^n = n\cdot \log_ab\\ 
+	& \log_{a^k}b=(1/k)\cdot\log_ab\\
+	& \ln (1/a) = -\ln a\\
+	& \log_a1=0
+	\end{align*}
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+	\cheattitle{Інші формули}
+	\begin{align*}
+		& f(x) = f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\dots+\frac{f^{(n)}(0)}{n!}x^n+\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}\text{ -- ф. Маклор\'{е}на}\\
+		& \grad u(M) = \frac{\partial u(M)}{\partial x}\vv{i}+\frac{\partial u (M)}{\partial y}\vv{j} + \frac{\partial u (M)}{\partial z}\vv{k}\text{ -- означення градієнту}\\
+		& z^n=|z|^n(\cos n\varphi+i\sin n\varphi),\ \frac{z_2}{z_2} = \frac{\rho_1}{\rho_2}\left(\cos(\varphi_1-\varphi_2)+i\sin(\varphi_1-\varphi_2)\right)\\
+		& a^3\pm b^3=(a\pm b)(a^2\mp ab+b^2),\ (a\pm b)^3=a^3 \pm  3a^2b + 3ab^2 \pm  b^3\\
+		& S_{\text{кола}}=\pi r^2,\ l_{\text{кола}}=2\pi r,\ V_{\text{сфери}}=\frac{4}{3}\pi r^3,\ S_{\text{сфери}} = 4\pi r^2\\
+		& \sqrt[n]{z}=\sqrt[n]{|z|}\left(\cos\frac{\varphi+2\pi k}{n}+i\sin\frac{\varphi+2\pi k}{n}\right)
+	\end{align*}
+\end{minipage}
 
 \end{document}

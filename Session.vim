@@ -13,16 +13,17 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 integrals_deritaves.tex
 badd +1 preamble.tex
 badd +1 macros.tex
+badd +0 calculus.tex
 argglobal
 %argdel
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabrewind
-edit integrals_deritaves.tex
+edit calculus.tex
 argglobal
+balt macros.tex
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -33,16 +34,15 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 46 - ((13 * winheight(0) + 31) / 62)
+let s:l = 1 - ((0 * winheight(0) + 31) / 62)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 46
-normal! 0101|
+keepjumps 1
+normal! 03|
 tabnext
 edit macros.tex
 argglobal
-balt integrals_deritaves.tex
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -62,7 +62,6 @@ normal! 082|
 tabnext
 edit preamble.tex
 argglobal
-balt integrals_deritaves.tex
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}

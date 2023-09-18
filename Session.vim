@@ -33,12 +33,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 42 - ((31 * winheight(0) + 31) / 62)
+let s:l = 46 - ((13 * winheight(0) + 31) / 62)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 42
-normal! 027|
+keepjumps 46
+normal! 0101|
 tabnext
 edit macros.tex
 argglobal

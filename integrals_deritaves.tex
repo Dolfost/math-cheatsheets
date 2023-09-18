@@ -31,7 +31,7 @@
 	& \int u^ndu = \frac{u^{n+1}}{n+1}+C,\ n\neq -1 & & \int \frac{du}{\sin^2u}=-\ctg u +C & & \int	\frac{du}{u^2+a^2}=\frac{1}{a}\arctg\frac{u}{a}+C & & \int 0du=C\\
 	& \int	\frac{du}{\sqrt{u^2\pm a^2}}=\ln\left|U+\sqrt{u^2\pm a^2}\right| +C & & \int \sh udu=\ch u+C & & \int	\frac{du}{\sqrt{a^2-u^2}}=\arcsin\frac{u}{a}+C & & \int \ch udu = \sh u + C\\
 	& \int \frac{du}{\cos u} = \ln \left|\tg\left(\frac{u}{2}+\frac{\pi}{4}\right)\right| + C & & \int \frac{du}{\sh^2u}=-\cth u +C & & \int \tg udu = -\ln\left|\cos u \right| + C & &\int a^ndu = \frac{a^u}{\ln a}+C\\
-	&  \int \cos udu = \sin u +C & &  \int \frac{du}{\ch^2u}=\th u + C & & \span\span \int\limits_a^bf(x)dx=F(x)\biggr|_a^b=F(b)-=F(a)\text{ -- ф. Н.--Л.}% 
+	&  \int \cos udu = \sin u +C & &  \int \frac{du}{\ch^2u}=\th u + C & & \span\span \int\limits_a^bf(x)dx=F(x)\biggr|_a^b=F(b)-F(a)\text{ -- ф. Н.--Л.}% 
 \end{align*}
 
 \newpage
@@ -39,7 +39,7 @@
 \cheattitle{Еквівалентні нескінченно малі функції}
 \begin{gather*}
 	x\sim\sin x\sim \tg x \sim \arcsin x\sim \arctg x\sim e^x-1 \sim \ln(1+x),\ 1-\cos x\sim \frac{x^2}{2} ,\ a^x-1\sim \frac{x}{\ln a},\ (a+x)^k -1\sim kx\\
-	\sqrt{1+x}-1\sim x/2 ,\ \ln\cos x\sim -(x^2)/2 ,\ \log_a(1+x)\sim x\log_ae,\text{ якщо } x\to 0
+	\sqrt{1+x}-1\sim x/2 ,\ \ln\cos x\sim -x^2/2 ,\ \log_a(1+x)\sim x\log_ae,\text{ якщо } x\to 0
 \end{gather*}
 \cheattitle{Важливі границі}
 \begin{align*}
@@ -72,13 +72,13 @@
 	\begin{align*}
 		& f(x) = f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\dots+\frac{f^{(n)}(0)}{n!}x^n+\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}\text{ -- ф. М.}\\
 		& \grad u(M) = \frac{\partial u(M)}{\partial x}\vv{i}+\frac{\partial u (M)}{\partial y}\vv{j} + \frac{\partial u (M)}{\partial z}\vv{k}\text{ -- означення градієнту}\\
-		& z^n=|z|^n(\cos n\varphi+i\sin n\varphi),\ \frac{z_2}{z_2} = \frac{\rho_1}{\rho_2}\left(\cos(\varphi_1-\varphi_2)+i\sin(\varphi_1-\varphi_2)\right)\\
+		& z^n=|z|^n(\cos n\varphi+i\sin n\varphi),\ \frac{z_1}{z_2} = \frac{\rho_1}{\rho_2}\left(\cos(\varphi_1-\varphi_2)+i\sin(\varphi_1-\varphi_2)\right)\\
 		& a^3\pm b^3=(a\pm b)(a^2\mp ab+b^2),\ (a\pm b)^3=a^3 \pm  3a^2b + 3ab^2 \pm  b^3\\
 		& S_{\text{кола}}=\pi r^2,\ l_{\text{кола}}=2\pi r,\ V_{\text{сфери}}=\frac{4}{3}\pi r^3,\ S_{\text{сфери}} = 4\pi r^2\\
 		& \sqrt[n]{z}=\sqrt[n]{|z|}\left(\cos\frac{\varphi+2\pi k}{n}+i\sin\frac{\varphi+2\pi k}{n}\right)
 	\end{align*}
 \end{minipage}
-\cheattitle{Рівняння кривих другого порядку}
+\cheattitle{Криві другого порядку}
 \begin{align*}
 	& x^2+y^2 = r\text{ -- коло} & & \frac{x^2}{a^2}+\frac{y^2}{b^2}=1\text{ -- еліпс} & & \pm\frac{y^2}{b^2}\mp\frac{x^2}{a^2}=1\text{ -- гіпербола} & & y^2=2px\text{ -- парабола}
 \end{align*}

@@ -15,7 +15,7 @@ else
 endif
 badd +1 preamble.tex
 badd +1 macros.tex
-badd +0 calculus.tex
+badd +1 calculus.tex
 argglobal
 %argdel
 tabnew +setlocal\ bufhidden=wipe
@@ -34,12 +34,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 31) / 62)
+let s:l = 76 - ((35 * winheight(0) + 31) / 62)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 03|
+keepjumps 76
+normal! 09|
 tabnext
 edit macros.tex
 argglobal
